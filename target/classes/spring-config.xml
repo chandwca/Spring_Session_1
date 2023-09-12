@@ -3,9 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- Define the Person bean -->
-    <bean id="person" class="org.example.Customer">
-        <property name="name" value="Chetna" />
+    <!-- Define the customer bean -->
+    <bean id="customer" class="org.example.Customer"  init-method="init" destroy-method="destroy">
+        <property name="name" value="Chetna"/>
     </bean>
+
+
 
 </beans>
