@@ -7,8 +7,8 @@ public class Main {
         // Load the Spring configuration
         ApplicationContext context = new ClassPathXmlApplicationContext("spring-config.xml");
 
-        // Retrieve the "person" bean from the Spring container
-        Customer customer = (Customer) context.getBean("person");
+        // Retrieve the "Customer" bean from the Spring container
+        Customer customer = (Customer) context.getBean("customer");
 
         // Get and display the Customer's name
         System.out.println("Customer's name: " + customer.getName());

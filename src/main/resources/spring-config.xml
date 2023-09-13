@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- Define the Person bean -->
-    <bean id="person" class="org.example.Customer">
+    <bean id="customer" class="org.example.Customer">
         <property name="name" value="Chetna" />
     </bean>
 
